@@ -169,10 +169,20 @@ SET population = 38000000, langues = 'Arabe, Français, Amazigh, Anglais'
 WHERE nom = 'Maroc';
 
 
-UPDATE ville
-SET description = 'Capitale administrative et centre culturel du Maroc'
-WHERE nom = 'Rabat';
+UPDATE ville  
+SET description = 'Capitale politique et administrative du Maroc'  
+WHERE nom = 'Rabat';  
 
 
 DELETE FROM pays
 WHERE nom = 'Algérie';
+
+SELECT 
+    p.nom AS 'Nom du pays',
+    p.population AS 'Population',
+    p.langues AS 'Langues officielles',
+    p.imageURL AS 'Image',
+    c.nom AS 'Continent'
+FROM pays p
+JOIN continent c ON p.id_continent = c.id_continent
+WHERE c.nom = 'Afrique';
