@@ -122,3 +122,13 @@ VALUES
 ('Maroua', 'Ville saharienne', 'Autre', 8),  
 ('Bamenda', 'Ville culturelle', 'Autre', 8),  
 ('Bafoussam', 'Ville agricole', 'Autre', 8);
+
+
+INSERT INTO ville (nom, description, type, id_pays)  
+VALUES  
+('Dodoma', 'Capitale de la Tanzanie', 'Capitale', 9),  
+('Dar es Salam', 'Ville portuaire', 'Autre', 9),  
+('Arusha', 'Ville touristique', 'Autre', 9),  
+('Mwanza', 'Ville industrielle', 'Autre', 9),  
+('Mbeya', 'Ville agricole', 'Autre', 9),  
+('Zanzibar', 'Île touristique', 'Autre', 9);  
