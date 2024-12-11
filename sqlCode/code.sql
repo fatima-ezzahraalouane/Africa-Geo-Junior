@@ -167,3 +167,8 @@ VALUES
 UPDATE pays
 SET population = 38000000, langues = 'Arabe, Français, Amazigh, Anglais'
 WHERE nom = 'Maroc';
+
+
+UPDATE ville
+SET description = 'Capitale administrative et centre culturel du Maroc'
+WHERE nom = 'Rabat';
