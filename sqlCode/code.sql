@@ -177,12 +177,13 @@ WHERE nom = 'Rabat';
 DELETE FROM pays
 WHERE nom = 'Algérie';
 
-SELECT 
-    p.nom AS 'Nom du pays',
-    p.population AS 'Population',
-    p.langues AS 'Langues officielles',
-    p.imageURL AS 'Image',
-    c.nom AS 'Continent'
-FROM pays p
-JOIN continent c ON p.id_continent = c.id_continent
-WHERE c.nom = 'Afrique';
+SELECT  
+    pays.id_pays AS 'ID',  
+    pays.nom AS 'Nom du pays',  
+    pays.population AS 'Population',  
+    pays.langues AS 'Langues officielles',  
+    pays.imageURL AS 'Image',  
+    continent.nom AS 'Continent'  
+FROM pays  
+JOIN continent ON pays.id_continent = continent.id_continent  
+WHERE continent.nom = 'Afrique'; 
