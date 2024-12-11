@@ -40,8 +40,7 @@ VALUES
 ('Tanzanie', 64000000, 'Swahili, Anglais', 1),  
 ('Mozambique', 33000000, 'Portugais', 1), 
 ('Sénégal', 17800000, 'Français, Wolof', 1),  
-('Tanzanie', 64000000, 'Swahili, Anglais', 1);
-
+('Kenya', 56000000, 'Anglais, Swahili', 1);
 
 INSERT INTO ville (nom, description, type, id_pays)  
 VALUES  
@@ -152,3 +151,13 @@ VALUES
 ('Ziguinchor', 'Ville portuaire', 'Autre', 11),  
 ('Kaolack', 'Ville agricole', 'Autre', 11),  
 ('Touba', 'Ville religieuse', 'Autre', 11);  
+
+
+INSERT INTO ville (nom, description, type, id_pays)  
+VALUES  
+('Nairobi', 'Capitale du Kenya', 'Capitale', 12),  
+('Mombasa', 'Ville portuaire', 'Autre', 12),  
+('Kisumu', 'Ville lacustre', 'Autre', 12),  
+('Nakuru', 'Ville touristique', 'Autre', 12),  
+('Eldoret', 'Ville industrielle', 'Autre', 12),  
+('Malindi', 'Ville côtière', 'Autre', 12);  
