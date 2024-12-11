@@ -1,12 +1,16 @@
+-- Création de la base de données
 CREATE DATABASE africageo_junior;
 
+-- Sélection de la base de données à utiliser
 USE africageo_junior;
 
+-- Création de la table "continent" pour stocker les continents
 CREATE TABLE continent (
     id_continent INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(300) NOT NULL UNIQUE
 );
 
+-- Création de la table "pays" pour stocker les informations des pays
 CREATE TABLE pays (
     id_pays INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(300) NOT NULL UNIQUE,
@@ -17,6 +21,7 @@ CREATE TABLE pays (
     FOREIGN KEY (id_continent) REFERENCES continent(id_continent) ON DELETE CASCADE
 );
 
+-- Création de la table "ville" pour stocker les villes associées aux pays
 CREATE TABLE ville (
     id_ville int NOT null AUTO_INCREMENT PRIMARY KEY,
     nom varchar(300) NOT null UNIQUE,
@@ -26,8 +31,10 @@ CREATE TABLE ville (
     FOREIGN KEY (id_pays) REFERENCES pays(id_pays) ON DELETE CASCADE
 );
 
+-- Insertion du continent "Afrique"
 INSERT INTO continent (nom) VALUES ('Afrique');
 
+-- Insertion des pays africains avec leurs détails
 INSERT INTO pays (nom, population, langues, imageURL, id_continent)
 VALUES
 ('Maroc', 37000000, 'Arabe, Français, Amazigh', 'https://example.com/maroc.jpg', 1),
@@ -43,6 +50,7 @@ VALUES
 ('Sénégal', 17800000, 'Français, Wolof', 'https://example.com/senegal.jpg', 1),  
 ('Kenya', 56000000, 'Anglais, Swahili', 'https://example.com/kenya.jpg', 1);
 
+-- Insertion des villes associées aux pays
 INSERT INTO ville (nom, description, type, id_pays)  
 VALUES  
 ('Rabat', 'Capitale administrative du Maroc', 'Capitale', 1),  
@@ -52,8 +60,7 @@ VALUES
 ('Fès', 'Ville historique connue pour sa médina et ses universités', 'Autre', 1),
 ('Tanger', 'Ville portuaire stratégique reliant l\'Europe et l\'Afrique', 'Autre', 1);
 
-
-
+-- Insertion des villes associées aux pays
 INSERT INTO ville (nom, description, type, id_pays)
 VALUES
 ('Alger', 'Capitale de l\'Algérie', 'Capitale', 2),  
@@ -83,7 +90,7 @@ VALUES
 ('Gizeh', 'Ville des pyramides', 'Autre', 4),  
 ('Charm el-Cheikh', 'Station balnéaire', 'Autre', 4); 
 
-
+-- Insertion des villes associées aux pays
 INSERT INTO ville (nom, description, type, id_pays)  
 VALUES  
 ('Yamoussoukro', 'Capitale politique', 'Capitale', 5),  
@@ -93,7 +100,7 @@ VALUES
 ('San Pedro', 'Ville portuaire', 'Autre', 5),  
 ('Korhogo', 'Ville culturelle', 'Autre', 5); 
 
-
+-- Insertion des villes associées aux pays
 INSERT INTO ville (nom, description, type, id_pays)  
 VALUES 
 ('Accra', 'Capitale du Ghana', 'Capitale', 6),  
@@ -103,7 +110,7 @@ VALUES
 ('Takoradi', 'Ville portuaire', 'Autre', 6),  
 ('Tema', 'Ville industrielle', 'Autre', 6);  
 
-
+-- Insertion des villes associées aux pays
 INSERT INTO ville (nom, description, type, id_pays)  
 VALUES  
 ('Luanda', 'Capitale de l\'Angola', 'Capitale', 7),  
@@ -161,22 +168,23 @@ VALUES
 ('Kisumu', 'Ville lacustre', 'Autre', 12),  
 ('Nakuru', 'Ville touristique', 'Autre', 12),  
 ('Eldoret', 'Ville industrielle', 'Autre', 12),  
-('Malindi', 'Ville côtière', 'Autre', 12);  
+('Malindi', 'Ville côtière', 'Autre', 12);
 
-
+-- Mise à jour des détails d'un pays
 UPDATE pays
 SET population = 38000000, langues = 'Arabe, Français, Amazigh, Anglais'
 WHERE nom = 'Maroc';
 
-
+-- Mise à jour de la description d'une ville
 UPDATE ville  
 SET description = 'Capitale politique et administrative du Maroc'  
 WHERE nom = 'Rabat';  
 
-
+-- Suppression d'un pays et de ses villes associées
 DELETE FROM pays
 WHERE nom = 'Algérie';
 
+-- Affichage de la liste des pays africains avec leurs détails
 SELECT  
     pays.id_pays AS 'ID',  
     pays.nom AS 'Nom du pays',  
