@@ -38,5 +38,6 @@ VALUES
 ('Angola', 36000000, 'Portugais', 1),  
 ('Cameroun', 29000000, 'Français, Anglais', 1),
 ('Tanzanie', 64000000, 'Swahili, Anglais', 1),  
-('Mozambique', 33000000, 'Portugais', 1), ('Sénégal', 17800000, 'Français, Wolof', 1),  
+('Mozambique', 33000000, 'Portugais', 1), 
+('Sénégal', 17800000, 'Français, Wolof', 1),  
 ('Tanzanie', 64000000, 'Swahili, Anglais', 1);
