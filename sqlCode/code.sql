@@ -142,3 +142,13 @@ VALUES
 ('Quelimane', 'Ville côtière', 'Autre', 10),  
 ('Tete', 'Ville minière', 'Autre', 10),  
 ('Pemba', 'Station balnéaire', 'Autre', 10);
+
+
+INSERT INTO ville (nom, description, type, id_pays)  
+VALUES  
+('Dakar', 'Capitale du Sénégal', 'Capitale', 11),  
+('Saint-Louis', 'Ville historique', 'Autre', 11),  
+('Thiès', 'Ville industrielle', 'Autre', 11),  
+('Ziguinchor', 'Ville portuaire', 'Autre', 11),  
+('Kaolack', 'Ville agricole', 'Autre', 11),  
+('Touba', 'Ville religieuse', 'Autre', 11);  
