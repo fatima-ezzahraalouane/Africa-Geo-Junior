@@ -25,4 +25,4 @@ CREATE TABLE ville (
     FOREIGN KEY (id_pays) REFERENCES pays(id_pays) ON DELETE CASCADE
 );
 
--- INSERT INTO continent (nom) VALUES ('Afrique');
+INSERT INTO continent (nom) VALUES ('Afrique');
