@@ -72,3 +72,13 @@ VALUES
 ('Monastir', 'Ville côtière', 'Autre', 3),  
 ('Gabès', 'Ville du sud', 'Autre', 3),  
 ('Bizerte', 'Ville du nord', 'Autre', 3); 
+
+
+INSERT INTO ville (nom, description, type, id_pays)  
+VALUES  
+('Le Caire', 'Capitale de l\'Égypte', 'Capitale', 4),  
+('Alexandrie', 'Ville portuaire', 'Autre', 4),  
+('Louxor', 'Ville historique', 'Autre', 4),  
+('Assouan', 'Ville touristique', 'Autre', 4),  
+('Gizeh', 'Ville des pyramides', 'Autre', 4),  
+('Charm el-Cheikh', 'Station balnéaire', 'Autre', 4);  
