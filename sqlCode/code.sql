@@ -172,3 +172,7 @@ WHERE nom = 'Maroc';
 UPDATE ville
 SET description = 'Capitale administrative et centre culturel du Maroc'
 WHERE nom = 'Rabat';
+
+
+DELETE FROM pays
+WHERE nom = 'Algérie';
