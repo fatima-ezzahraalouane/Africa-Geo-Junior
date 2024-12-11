@@ -92,3 +92,15 @@ VALUES
 ('Daloa', 'Ville agricole', 'Autre', 5),  
 ('San Pedro', 'Ville portuaire', 'Autre', 5),  
 ('Korhogo', 'Ville culturelle', 'Autre', 5); 
+
+
+INSERT INTO ville (nom, description, type, id_pays)  
+VALUES 
+('Accra', 'Capitale du Ghana', 'Capitale', 6),  
+('Kumasi', 'Ville historique', 'Autre', 6),  
+('Tamale', 'Ville du nord', 'Autre', 6),  
+('Cape Coast', 'Ville côtière', 'Autre', 6),  
+('Takoradi', 'Ville portuaire', 'Autre', 6),  
+('Tema', 'Ville industrielle', 'Autre', 6);  
+
+
