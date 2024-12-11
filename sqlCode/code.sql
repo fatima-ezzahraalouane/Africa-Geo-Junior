@@ -51,3 +51,14 @@ VALUES
 ('Marrakech', 'Ville touristique célèbre pour sa médina et ses souks', 'Autre', 1), 
 ('Fès', 'Ville historique connue pour sa médina et ses universités', 'Autre', 1),
 ('Tanger', 'Ville portuaire stratégique reliant l\'Europe et l\'Afrique', 'Autre', 1);
+
+
+
+INSERT INTO ville (nom, description, type, id_pays)
+VALUES
+('Alger', 'Capitale de l\'Algérie', 'Capitale', 2),  
+('Oran', 'Ville portuaire', 'Autre', 2),  
+('Constantine', 'Ville historique', 'Autre', 2),  
+('Annaba', 'Ville côtière', 'Autre', 2), 
+('Tlemcen', 'Ville culturelle', 'Autre', 2), 
+('Ghardaïa', 'Ville du désert', 'Autre', 2);
