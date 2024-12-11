@@ -26,3 +26,17 @@ CREATE TABLE ville (
 );
 
 INSERT INTO continent (nom) VALUES ('Afrique');
+
+INSERT INTO pays (nom, population, langues, id_continent)
+VALUES
+('Maroc', 37000000, 'Arabe, Français, Amazigh', 1), 
+('Algérie', 44700000, 'Arabe, Berbère, Français', 1),  
+('Tunisie', 12000000, 'Arabe, Français', 1),
+('Égypte', 109000000, 'Arabe', 1),  
+('Côte d’Ivoire', 28000000, 'Français', 1),  
+('Ghana', 34000000, 'Anglais', 1),
+('Angola', 36000000, 'Portugais', 1),  
+('Cameroun', 29000000, 'Français, Anglais', 1),
+('Tanzanie', 64000000, 'Swahili, Anglais', 1),  
+('Mozambique', 33000000, 'Portugais', 1), ('Sénégal', 17800000, 'Français, Wolof', 1),  
+('Tanzanie', 64000000, 'Swahili, Anglais', 1);
