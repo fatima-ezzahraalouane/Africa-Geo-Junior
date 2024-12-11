@@ -62,3 +62,13 @@ VALUES
 ('Annaba', 'Ville côtière', 'Autre', 2), 
 ('Tlemcen', 'Ville culturelle', 'Autre', 2), 
 ('Ghardaïa', 'Ville du désert', 'Autre', 2);
+
+
+INSERT INTO ville (nom, description, type, id_pays)
+VALUES
+('Tunis', 'Capitale de la Tunisie', 'Capitale', 3),  
+('Sfax', 'Ville portuaire', 'Autre', 3),  
+('Sousse', 'Ville touristique', 'Autre', 3),  
+('Monastir', 'Ville côtière', 'Autre', 3),  
+('Gabès', 'Ville du sud', 'Autre', 3),  
+('Bizerte', 'Ville du nord', 'Autre', 3); 
