@@ -112,3 +112,13 @@ VALUES
 ('Huambo', 'Ville agricole', 'Autre', 7),  
 ('Malanje', 'Ville culturelle', 'Autre', 7),  
 ('Lubango', 'Ville montagneuse', 'Autre', 7);
+
+
+INSERT INTO ville (nom, description, type, id_pays)  
+VALUES  
+('Yaoundé', 'Capitale du Cameroun', 'Capitale', 8),  
+('Douala', 'Ville portuaire', 'Autre', 8),  
+('Garoua', 'Ville commerciale', 'Autre', 8),  
+('Maroua', 'Ville saharienne', 'Autre', 8),  
+('Bamenda', 'Ville culturelle', 'Autre', 8),  
+('Bafoussam', 'Ville agricole', 'Autre', 8);
