@@ -81,4 +81,14 @@ VALUES
 ('Louxor', 'Ville historique', 'Autre', 4),  
 ('Assouan', 'Ville touristique', 'Autre', 4),  
 ('Gizeh', 'Ville des pyramides', 'Autre', 4),  
-('Charm el-Cheikh', 'Station balnéaire', 'Autre', 4);  
+('Charm el-Cheikh', 'Station balnéaire', 'Autre', 4); 
+
+
+INSERT INTO ville (nom, description, type, id_pays)  
+VALUES  
+('Yamoussoukro', 'Capitale politique', 'Capitale', 5),  
+('Abidjan', 'Ville économique', 'Autre', 5),  
+('Bouaké', 'Ville industrielle', 'Autre', 5),  
+('Daloa', 'Ville agricole', 'Autre', 5),  
+('San Pedro', 'Ville portuaire', 'Autre', 5),  
+('Korhogo', 'Ville culturelle', 'Autre', 5); 
