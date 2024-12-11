@@ -16,6 +16,13 @@ CREATE TABLE pays (
     FOREIGN KEY (id_continent) REFERENCES continent(id_continent) ON DELETE CASCADE
 );
 
-
+CREATE TABLE ville (
+    id_ville int PRIMARY KEY AUTO_INCREMENT,
+    nom varchar(200) NOT null,
+    description text,
+    type ENUM('Capitale', 'Autre') NOT null,
+    id_pays int,
+    FOREIGN KEY (id_pays) REFERENCES pays(id_pays) ON DELETE CASCADE
+);
 
 -- INSERT INTO continent (nom) VALUES ('Afrique');
