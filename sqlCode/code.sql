@@ -41,3 +41,13 @@ VALUES
 ('Mozambique', 33000000, 'Portugais', 1), 
 ('Sénégal', 17800000, 'Français, Wolof', 1),  
 ('Tanzanie', 64000000, 'Swahili, Anglais', 1);
+
+
+INSERT INTO ville (nom, description, type, id_pays)  
+VALUES  
+('Rabat', 'Capitale administrative du Maroc', 'Capitale', 1),  
+('Casablanca', 'Ville économique du Maroc', 'Autre', 1),  
+('Safi', 'Ville portuaire connue pour la pêche et la poterie', 'Autre', 1),
+('Marrakech', 'Ville touristique célèbre pour sa médina et ses souks', 'Autre', 1), 
+('Fès', 'Ville historique connue pour sa médina et ses universités', 'Autre', 1),
+('Tanger', 'Ville portuaire stratégique reliant l\'Europe et l\'Afrique', 'Autre', 1);
