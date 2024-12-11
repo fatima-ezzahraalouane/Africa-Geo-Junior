@@ -104,3 +104,11 @@ VALUES
 ('Tema', 'Ville industrielle', 'Autre', 6);  
 
 
+INSERT INTO ville (nom, description, type, id_pays)  
+VALUES  
+('Luanda', 'Capitale de l\'Angola', 'Capitale', 7),  
+('Benguela', 'Ville portuaire', 'Autre', 7),  
+('Lobito', 'Ville industrielle', 'Autre', 7),  
+('Huambo', 'Ville agricole', 'Autre', 7),  
+('Malanje', 'Ville culturelle', 'Autre', 7),  
+('Lubango', 'Ville montagneuse', 'Autre', 7);
