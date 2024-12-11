@@ -132,3 +132,13 @@ VALUES
 ('Mwanza', 'Ville industrielle', 'Autre', 9),  
 ('Mbeya', 'Ville agricole', 'Autre', 9),  
 ('Zanzibar', 'Île touristique', 'Autre', 9);  
+
+
+INSERT INTO ville (nom, description, type, id_pays)  
+VALUES  
+('Maputo', 'Capitale du Mozambique', 'Capitale', 10),  
+('Beira', 'Ville portuaire', 'Autre', 10),  
+('Nampula', 'Ville commerciale', 'Autre', 10),  
+('Quelimane', 'Ville côtière', 'Autre', 10),  
+('Tete', 'Ville minière', 'Autre', 10),  
+('Pemba', 'Station balnéaire', 'Autre', 10);
